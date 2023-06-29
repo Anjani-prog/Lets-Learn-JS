@@ -46,3 +46,29 @@ function nextHappy(N) {
 }
 
 console.log(nextHappy(19));
+
+/* 
+
+Time Complexity:
+
+The squareSumOfDigits function has a time complexity of O(log N), where N is the input number.
+This is because the number of digits in N determines the number of iterations in the while loop.
+The findNextHappyNumber function has an outer while loop that iterates from N + 1 until a happy number is found.
+In the worst case, where no happy number is found within a certain range, the number of iterations will be proportional
+to the difference between the next happy number and N. Therefore, the time complexity of this function is also O(log N) 
+in the worst case. 
+
+Overall, the time complexity of the solution is O(log N).
+
+Space Complexity:
+
+The squareSumOfDigits function uses a constant amount of space for storing the variables sumOfSquares and digit.
+Hence, it has a space complexity of O(1).
+The findNextHappyNumber function uses a set called seenNumbers to keep track of numbers encountered during the calculation to detect cycles. 
+The maximum number of unique numbers stored in the set is limited by the number of digits in the input number N.
+Therefore, the space complexity of this function is also O(log N).
+Overall, the space complexity of the solution is O(log N).
+
+In summary, the provided solution has a time complexity of O(log N) and a space complexity of O(log N), where N is the input number. 
+
+*/
