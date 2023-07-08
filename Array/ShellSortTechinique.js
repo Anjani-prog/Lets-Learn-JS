@@ -49,3 +49,6 @@ let a2 = [2, 3, 9];
 
 let res = merge(a1, a2, a1.length, a2.length);
 console.log(res);
+
+/* Time Complexity: O(n + m), as the gap is considered to be n+m.
+Auxiliary Space: O(1) */
